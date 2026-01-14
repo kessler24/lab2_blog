@@ -1,5 +1,5 @@
 ---
-title: "lab2_blog"
+title: "Data Science Blog"
 listing:
   contents: posts
   sort: "date desc"
