@@ -149,36 +149,47 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Entering an unfamiliar indoor space presents a unique challenge for blind and low-vision people: not just moving safely, but understanding where things are and how the space is organized. For sighted people, a quick look at a floor plan or across a room can convey layout, scale, and orientation; for those who are blind or low-vision, this type of spatial overview is rarely available. This blog post explores how the recent advances in high-resolution cameras, LiDAR-enabled smartphones, image recognition models, and large-scale, open-source location data can create new opportunities for blind-accessible indoor mapping.</p>
+<p>Entering an unfamiliar indoor space presents a unique challenge for blind and low-vision people: not just moving safely, but understanding where things are and how the space is organized. For sighted people, a quick look at a floor plan or across a room can convey layout, scale, and orientation; for those who are blind or low-vision, this type of spatial overview is rarely available. This blog post explores existing blind accessible navigation and object recognition technologies, and how the recent rise in commercially available high-resolution cameras and LiDAR-enabled smartphones, combined with advances in image recognition models and large-scale, open-source location data, can create new opportunities for blind-accessible indoor mapping.</p>
 <section id="navigation-vs.-mapping" class="level3">
 <h3 class="anchored" data-anchor-id="navigation-vs.-mapping">Navigation vs.&nbsp;Mapping</h3>
 <p>To start, it is useful to establish clear definitions of navigation versus mapping.</p>
-<p><strong>Navigation</strong> is the task of following directions. Questions like: <em>How do I get to Starbucks? Which turn should I take next? How long will it take to get to Room 344 from here? How do I get to the nearest restroom?</em> can all be answered with navigation. Blind accessible navigation systems require a higher level of detail than sighted systems. To use a navigation system, the user needs to have a specific starting and ending point already chosen.</p>
-<p><strong>Mapping</strong>, for the purposes of this article, is the process of gaining an understanding of a space. It involves developing a mental model of what is around you: the relative positions of objects, the size and shape of barriers (e.g.&nbsp;walls), and how different areas relate to one another. Mapping supports questions like: <em>What is in this room? What shops are around me? How big is this space? Where might I want to go next?</em></p>
+<hr>
+<section id="navigation" class="level4">
+<h4 class="anchored" data-anchor-id="navigation">Navigation</h4>
+<p>Navigation is the task of following directions. Questions like: <em>How do I get to Starbucks? Which turn should I take next? How long will it take to get to Room 344 from here? How do I get to the nearest restroom?</em> can all be answered with navigation. Blind accessible navigation systems require a higher level of detail than sighted systems. To use a navigation system, the user needs to have a specific starting and ending point already chosen.</p>
+<hr>
+</section>
+<section id="mapping" class="level4">
+<h4 class="anchored" data-anchor-id="mapping">Mapping</h4>
+<p>Mapping, for the purposes of this article, is the process of gaining an understanding of a space. It involves developing a mental model of what is around you: the relative positions of objects, the size and shape of barriers (e.g.&nbsp;walls), and how different areas relate to one another. Mapping supports questions like: <em>What is in this room? What shops are around me? How big is this space? Where might I want to go next?</em> Mapping systems are used to get a sense of an area, and are often used to choose an ending point to be used in navigation.</p>
+<hr>
 <p>Both navigation and mapping occur at multiple scales. If you are attending a conference at UBC, you may need directions to UBC, directions to the room of your conference, and directions to your table. Similarly, you may want a map to gain insight into the organization of buildings across campus (e.g.&nbsp;to find a nearby coffee shop), the floor plan of the building you are entering (e.g.&nbsp;to know which door to enter by, or where the check-in desk will be), and the layout of the tables within the conference room.</p>
+</section>
 </section>
 <section id="blind-accessible-navigation-technology" class="level3">
 <h3 class="anchored" data-anchor-id="blind-accessible-navigation-technology">Blind Accessible Navigation Technology</h3>
-<p>Outdoor navigation for blind travelers has seen substantial innovation over the past decade.</p>
+<p>Let’s start by understanding some of the most popular navigation technology for blind travelers.</p>
+<hr>
 <section id="lazarillo-and-blindsquare" class="level4">
 <h4 class="anchored" data-anchor-id="lazarillo-and-blindsquare">Lazarillo and BlindSquare</h4>
 <p>Applications such as Lazarillo and BlindSquare provide turn-by-turn directions, nearby points of interest, and contextual information using precise GPS and digital map data. The two popular apps have very similar technology and feature set. Both determine your location using GPS, then gather open-source information about addresses and businesses nearby. They both contain proprietary algorithms to filter this information and announce points of interest, e.g.&nbsp;nearby coffee shops. Once you select a destination, they provide blind-friendly, hyper-specific directions. Blind-friendly directions are more detailed than sighted directions, often with more precise distance estimates, information about stairs, doors, and intersections, and information about which side of the street your destination is on (and help getting to the correct side of the street).</p>
+<hr>
 </section>
-<section id="google-maps-and-precision-gps-through-camera" class="level4">
-<h4 class="anchored" data-anchor-id="google-maps-and-precision-gps-through-camera">Google Maps (and precision GPS through camera)</h4>
-<p>Additionally, we’ve seen a rise of tools for addressing indoor navigation and obstacle avoidance through computer vision and depth sensing. A variety of systems have been augment or replace the white cane, which warn users about obstacles.</p>
+<section id="google-and-apple-maps" class="level4">
+<h4 class="anchored" data-anchor-id="google-and-apple-maps">Google and Apple Maps</h4>
+<p>Popular sighted navigation applications, such as Google and Apple Maps, have recently been increasing their accessibility features. Google Maps has recently increased blind accessibility, offering more detailed voice guidance, frequent updates, and new types of verbal announcements for walking trips through an optional setting that blind and low vision users can toggle on. Around 2021, Apple Maps released a promising “Refine Location” feature that combined your phone camera and your GPS to pinpoint a more accurate location in urban settings. Similarly, Google Maps has an AR ‘Live View’ feature that combines the phone camera with street view data to more accurately identify position and orientation. Both of these features have promise for more specific and blind-friendly navigation, though neither Google or Apple Maps seems to be developing them towards this use case.</p>
+<hr>
 </section>
-<section id="something-obstacle-avoidance" class="level4">
-<h4 class="anchored" data-anchor-id="something-obstacle-avoidance">Something obstacle avoidance</h4>
-<p><a href="https://glidance.io/" class="uri">https://glidance.io/</a></p>
-<p>Additionally, we’ve seen a rise of tools for addressing indoor navigation and obstacle avoidance through computer vision and depth sensing. A variety of systems have been augment or replace the white cane, which warn users about obstacles.</p>
-<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5375851/" class="uri">https://pmc.ncbi.nlm.nih.gov/articles/PMC5375851/</a></p>
-<p><a href="https://www.nature.com/articles/s41467-025-58085-x" class="uri">https://www.nature.com/articles/s41467-025-58085-x</a></p>
+<section id="wewalk-smartcane" class="level4">
+<h4 class="anchored" data-anchor-id="wewalk-smartcane">WeWalk Smartcane</h4>
+<p>Significant research has focused on computer vision and sensor-based tools for indoor navigation and obstacle avoidance to augment the traditional white cane. Products like the WeWalk smart cane use sensors to warn users of overhead obstacles (a primary drawback of traditional canes) and provide navigation directions that avoid large obstacles like furniture.</p>
+<hr>
 </section>
 <section id="seeingai" class="level4">
 <h4 class="anchored" data-anchor-id="seeingai">SeeingAI</h4>
-<p>Lastly, there has also been significant development in close up object identification.</p>
-<p>These tools all focus on immediate interaction rather than spatial understanding. In other words, they help users <em>avoid or recognize</em> things, but not necessarily <em>understand</em> how those things are arranged. What remains largely under-explored is technology that supports mapping as a mental model: systems that convey scale, orientation, and layout in a way that can be remembered, revisited, and shared.</p>
+<p>Lastly, there has also been significant development in close up object identification. Applications like SeeingAI can read text, identify small objects, and describe photos. Apps like Google Images have introduced similar features for advanced image recognition.</p>
+<hr>
+<p>Notice how these tools all focus on immediate interaction rather than spatial understanding. They help users avoid or identify things, but not necessarily get a sense of how those things are arranged. What remains largely under-explored is technology that supports mapping as a mental model: systems that convey scale, orientation, and layout in a way that can be remembered, revisited, and shared.</p>
 </section>
 </section>
 <section id="tactile-maps" class="level3">
@@ -229,6 +240,11 @@ ul.task-list li input[type="checkbox"] {
 <p>https://touch-mapper.org/en/</p>
 <p>https://www.esri.com/about/newsroom/arcnews/tactile-maps-built-with-gis-help-people-who-are-blind-gain-spatial-awareness</p>
 <p>https://www.perkins.org/resource/getting-started-non-visual-digital-maps/</p>
+<p><a href="https://blog.google/products-and-platforms/products/maps/better-maps-for-people-with-vision-impairments/" class="uri">https://blog.google/products-and-platforms/products/maps/better-maps-for-people-with-vision-impairments/</a></p>
+<p><a href="https://techcrunch.com/2020/06/25/apple-maps-to-tell-you-refine-location-by-scanning-the-skyline/" class="uri">https://techcrunch.com/2020/06/25/apple-maps-to-tell-you-refine-location-by-scanning-the-skyline/</a></p>
+<p><a href="https://geospatialworld.net/prime/business-and-industry-trends/what-is-visual-positioning-system-vps/" class="uri">https://geospatialworld.net/prime/business-and-industry-trends/what-is-visual-positioning-system-vps/</a></p>
+<p><a href="https://www.tdk.com/en/featured_stories/entry_084-WeWALK-Smart-Cane-2.html" class="uri">https://www.tdk.com/en/featured_stories/entry_084-WeWALK-Smart-Cane-2.html</a></p>
+<p><a href="https://wewalk.io/en/" class="uri">https://wewalk.io/en/</a></p>
 
 
 </section>
