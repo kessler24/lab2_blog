@@ -14,13 +14,13 @@ Entering an unfamiliar indoor space presents a unique challenge for blind and lo
 
 #### Navigation
 
-Navigation is the task of following directions. Questions like: *How do I get to Starbucks? Which turn should I take next? How long will it take to get to Room 344 from here? How do I get to the nearest restroom?* can all be answered with navigation. Blind accessible navigation systems require a higher level of detail than sighted systems. To use a navigation system, the user needs to have a specific starting and ending point already chosen.
+Navigation is the task of following directions. Questions like: *How do I get to Starbucks? Which turn should I take next? How long will it take to get to Room 344?* can all be answered with navigation. Blind accessible navigation systems require a higher level of detail than sighted systems. To use a navigation system, the user needs to have a specific starting and ending point already chosen.
 
 ------------------------------------------------------------------------
 
 #### Mapping
 
-Mapping, for the purposes of this article, is the process of gaining an understanding of a space. It involves developing a mental model of what is around you: the relative positions of objects, the size and shape of barriers (e.g. walls), and how different areas relate to one another. Mapping supports questions like: *What is in this room? What shops are around me? How big is this space? Where might I want to go next?* Mapping systems are used to get a sense of an area, and are often used to choose an ending point to be used in navigation.
+Mapping, for the purposes of this article, is the process of gaining an understanding of a space. It involves developing a mental model of what is around you: the relative positions of objects, the size and shape of barriers (e.g. walls), and how different areas relate to one another. Mapping supports questions like: *What is in this room? What shops are around me on this street? How big is this space? Where might I want to go next?* Mapping systems are used to get a sense of an area, and are often used to choose an ending point to be used in navigation.
 
 ------------------------------------------------------------------------
 
@@ -32,13 +32,13 @@ Both navigation and mapping occur at multiple scales. If you are attending a con
 
 #### Lazarillo and BlindSquare
 
-Applications such as Lazarillo and BlindSquare provide turn-by-turn directions, nearby points of interest, and contextual information using precise GPS and digital map data. The two popular apps have very similar technology and feature set. Both determine your location using GPS, then gather open-source information about addresses and businesses nearby. They both contain proprietary algorithms to filter this information and announce points of interest, e.g. nearby coffee shops. Once you select a destination, they provide blind-friendly, hyper-specific directions. Blind-friendly directions are more detailed than sighted directions, often with more precise distance estimates, information about stairs, doors, and intersections, and information about which side of the street your destination is on (and help getting to the correct side of the street).
+Applications such as Lazarillo and BlindSquare provide turn-by-turn directions, nearby points of interest, and contextual information using precise GPS and digital map data. The two popular apps have very similar technology and feature set. Both determine your location using GPS, then gather open-source information about addresses and businesses nearby. They both provide blind-friendly, hyper-specific directions ( precise distance estimates and information about stairs, doors, intersections, etc) and can announce points of interest as you navigate.
 
 ------------------------------------------------------------------------
 
-#### Google and Apple Maps
+#### Apple and Google Maps
 
-Popular sighted navigation applications, such as Google and Apple Maps, have recently been increasing their accessibility features. Google Maps has recently increased blind accessibility, offering more detailed voice guidance, frequent updates, and new types of verbal announcements for walking trips through an optional setting that blind and low vision users can toggle on. Around 2021, Apple Maps released a promising "Refine Location" feature that combined your phone camera and your GPS to pinpoint a more accurate location in urban settings. Similarly, Google Maps has an AR 'Live View' feature that combines the phone camera with street view data to more accurately identify position and orientation. Both of these features have promise for more specific and blind-friendly navigation, though neither Google or Apple Maps seems to be developing them towards this use case.
+Popular navigation application have been increasing their accessibility features as well. Google Maps now offers more detailed voice guidance, frequent updates, and new types of verbal announcements for walking trips through an optional setting. Both Google and Apple Maps released AR features ('Live View' and 'Refine Location', respectively) that compare your phone camera to street view data to pinpoint a more accurate location and orientation around 2021, but neither feature has really taken off. These features have promise for blind-friendly navigation, though neither Google or Apple Maps seems to be developing them towards this use case.
 
 ------------------------------------------------------------------------
 
@@ -50,11 +50,11 @@ Significant research has focused on computer vision and sensor-based tools for i
 
 #### SeeingAI
 
-Lastly, there has also been significant development in close up object identification. Applications like SeeingAI can read text, identify small objects, and describe photos. Apps like Google Images have introduced similar features for advanced image recognition.
+Lastly, there has also been significant development in close up object identification. Applications like SeeingAI can read text, identify small objects, and describe photos. Google Images and other mainstream image applications have introduced similar features for advanced image recognition.
 
 ------------------------------------------------------------------------
 
-Notice how these tools all focus on immediate interaction rather than spatial understanding. They help users avoid or identify things, but not necessarily get a sense of how those things are arranged. What remains largely under-explored is technology that supports mapping as a mental model: systems that convey scale, orientation, and layout in a way that can be remembered, revisited, and shared.
+Notice how these tools all focus on immediate interaction rather than spatial understanding. They help users avoid or identify things, but not necessarily get a sense of how those things are arranged.
 
 ### Blind Accessible Mapping Technology
 
@@ -68,15 +68,15 @@ Figure 1. A tactile map of an outdoor area. Image depicts someone reading a tact
 
 One of the most established non-visual approaches to spatial understanding is the tactile map. These maps use raised lines, textures, and braille labels to represent walls, pathways, landmarks, and boundaries. When available, tactile maps can be extremely effective tools for building spatial awareness before or during exploration.
 
-Despite their usefulness, tactile maps have significant limitations. They are relatively rare, often fixed in place, and typically only available in select public spaces. Creating a tactile map is expensive and time-consuming, requiring specialized equipment and expertise. Updates are difficult, and personalization is nearly impossible.
+Despite their usefulness, tactile maps have significant limitations. They are relatively rare, often fixed in place, and typically only available in select public spaces. Creating a tactile map is expensive and time-consuming, making updates difficult.
 
-Additionally, tactile maps often require a sighted intermediary during creation. Visual layouts must be interpreted, translated, and validated by someone who can see the original plan. This process limits scalability and autonomy. While tactile maps excel as physical artifacts, they lack many advantages of digital systems: easy duplication, real-time updates, portability, and integration with sensors.
+Additionally, tactile maps often require a sighted intermediary during creation. Visual layouts must be interpreted, translated, and validated by someone who can see the blueprints, visual maps, or photos of the area. This process limits scalability and autonomy. Overall, tacticle maps lack many advantages of digital systems: easy duplication, real-time updates, portability, and possible integrations with smartphone sensors.
 
 ------------------------------------------------------------------------
 
 #### MicroSoft Soundscape / Voice Vista
 
-The discontinued Microsoft Soundscape was published as an open-source project and picked up to create the Voice Vista app. This technology implements the idea of a "soundscape" for both mapping and navigation. As the user holds their phone up with the camera facing out and moves around, they get non-voice audio and haptic cues about their surroundings. Voice Vista focuses primarily on navigation, using these queues to provide non-text audio directions, but still attempts to give its users a heightened sense of their environment and help forming mental maps.
+The discontinued Microsoft Soundscape was published as an open-source project and picked up to create the Voice Vista app. This technology implements the idea of a "soundscape" for both mapping and navigation. As the user holds their phone up with the camera facing out and moves around, they get non-voice audio and haptic cues about their surroundings. Voice Vista focuses primarily on navigation, using these queues to provide non-text audio directions, but also attempts to give its users a heightened sense of their environment and help forming mental maps.
 
 ------------------------------------------------------------------------
 
@@ -84,7 +84,7 @@ The discontinued Microsoft Soundscape was published as an open-source project an
 
 #### Image Recognition, LIDAR, and precise GPS
 
-Recent advances in consumer electronics offer an opportunity to rethink this pipeline entirely. High-resolution smartphone cameras, on-device image recognition, and LiDAR depth sensors—now present in mainstream smartphones—enable rich environmental sensing without specialized hardware. At the same time, improvements in inertial measurement units and precise positioning allow devices to estimate orientation and relative movement with increasing accuracy.
+High-resolution smartphone cameras, on-device image recognition, and LiDAR depth sensors—now present in mainstream smartphones—enable rich environmental sensing without specialized hardware. At the same time, improvements in inertial measurement units and precise positioning allow devices to estimate orientation and relative movement with increasing accuracy.
 
 Many of the previously discussed blind-accessible applications already make use of these technologies for navigation and object recognition. Our idea is to use the same technologies, but at a different scale. Rather than focusing on moment-by-moment descriptions and directions, our project explores how image recognition, LiDAR, and motion sensing can create a virtual representation of a space with appropriate detail for a blind user.
 
@@ -98,9 +98,9 @@ Figure 2. Perkins' Non-Visual Digital Map using the SAS Graphics Accelerator. A 
 
 The original inspiration for this concept is from Perkins' Non-Visual Digital Map, developed using the SAS Graphics Accelerator. Their work introduces a “virtual cane” model in which users explore large areas by sweeping through directions and receiving audio feedback. Our approach builds on this idea, implementing it at a smaller scale (identifying indoor features, rather than buildings) and automating the map creation process.
 
-By combining LiDAR-enabled cameras, inertial sensing, and image recognition, we propose an automated system that identifies nearby objects—such as furniture, doorways, bathrooms, counters, and signs—and represents them as directional-distance vectors relative to the user. As the user slowly turns in place with their smartphone, the system detects landmarks using image recognition and places them within a local coordinate frame with inertial sensing for direction and LiDAR for distance estimates.
+By combining LiDAR-enabled cameras, inertial sensing, and image recognition, we are working on an automated system that identifies nearby objects—such as furniture, doorways, bathrooms, counters, and signs—and represents them as directional-distance vectors relative to the user. As the user slowly turns in place with their smartphone, the system detects landmarks using image recognition and places them within a local coordinate frame, using inertial sensing for direction and LiDAR for distance estimates.
 
-Compared to tactile maps, the vector based map is an ideal format to leverage smartphone cameras because a vector based map is easy to create using forward facing camera position (while tactile maps would likely require birds eye photos). As such, our system not only builds on the traditional sweeping cane experience to communicate the map, but also the traditional sweeping video taking experience to create the map.
+Compared to tactile maps, the vector based map is an ideal format to leverage smartphone cameras because it is easy to create using the normal forward facing camera position (while tactile maps would likely require birds eye photos). As such, our system not only builds on the traditional sweeping cane experience to *communicate* the map, but also the traditional sweeping video taking experience to *create* the map.
 
 #### Vector Based Map
 
@@ -108,13 +108,13 @@ Compared to tactile maps, the vector based map is an ideal format to leverage sm
 
 Figure 3: A vector based non-visual map depicting a semi-circle with dots scattered throughout. One dot is highlighted with a green star, and a line is depicted from the center of the circle to that dot. Text on the screen reads "Olin College, Dining Hall Kiosk, 27 meters, 11 o'clock, CC Door Near Main Stair".
 
-Because this system is designed for non-visual use first, interaction design is critical. In our prototype, users explore the map through left and right swiping gestures. Swiping cycles through detected points of interest, announcing each item’s identity, distance, and direction. This design is inspired by smartphone screen readers, such as VoiceOver, which use swiping motions to navigate the phone. For low vision users, an additional visual layer uses high-contrast colors and large shapes to augment the audio information.
+Because this system is designed for non-visual use first, interaction design is critical. In our prototype, users explore the map through left and right swiping gestures. Swiping cycles through detected points of interest, announcing each item’s identity, distance, and direction. This interaction is inspired by smartphone screen readers, such as VoiceOver, which use swiping motions to navigate the phone. For low vision users, an additional visual layer uses high-contrast colors and large shapes to augment the audio information, as in Perkins' design.
 
-A critical component of the sighted mapping experience is the ability to review maps away from the mapped location. Unlike navigation directions, maps must be persistent digital objects. A user can save each map they create with a descriptive name tied to a specific location and orientation, e.g. facing forward in a particular doorway. Like sighted maps, our maps can be reused, compared, and shared.
+A critical component of the sighted mapping experience is the ability to review maps away from the mapped location. Unlike navigation directions, maps must be persistent digital objects. A user can save each map they create in our app with a descriptive name tied to a specific location and orientation, e.g. facing forward in a particular doorway. Like sighted maps, our maps can be reused, compared, and shared.
 
 ### Looking Forward
 
-Indoor mapping for blind and low-vision users remains an open and largely unexplored design space. By applying new visual sensing and data processing technologies to a familiar non-visual mental model, this work proposes one path toward more accessible indoor mapping. Rather than translating visual maps into accessible formats, it begins with how cane users already understand space and builds technology around that logic.
+Indoor mapping for blind and low-vision users remains an open and largely unexplored design space. By applying new visual sensing and data processing technologies to a familiar non-visual mental model, our work proposes one path toward more accessible indoor mapping. Rather than translating visual maps into accessible formats, it begins with how cane users already understand space and builds technology around that logic.
 
 ### References
 
